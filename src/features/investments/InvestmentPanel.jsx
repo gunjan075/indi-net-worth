@@ -19,7 +19,7 @@ export function InvestmentPanel({ investments, onAdd, onUpdate, onRemove }) {
           Add instrument
         </button>
       </div>
-      <div className="space-y-3">
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {investments.map((investment) => (
           <InvestmentCard key={investment.id} investment={investment} onUpdate={update} onRemove={onRemove} />
         ))}
